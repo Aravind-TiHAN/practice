@@ -61,6 +61,29 @@ The NVIDIA Orin is a high-performance computing device designed for autonomous s
 sudo /usr/bin/jetson_clocks --fan
 ```
 
+## Software setup
+
+### Setup the Virtual Environment
+
+First, install the `virtualenv` package and create a new Python 3 virtual environment:
+
+```bash
+sudo apt-get install virtualenv
+python3 -m virtualenv -p python3 `chosen_venv_name`
+```
+
+Replace  `<chosen_venv_name>` with your desired virtual environment name.
+
+### Activate the Virtual Environment
+
+Next, activate the virtual environment:
+
+```bash
+source `chosen_venv_name` /bin/activate
+Deactivate (for deactivating virtual environment)
+```
+
+
 
 <img src="pictures/vlcsnap.png" alt="TestbedImage">
 
