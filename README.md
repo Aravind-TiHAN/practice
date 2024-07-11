@@ -65,45 +65,45 @@ sudo /usr/bin/jetson_clocks --fan
 
 - **Setup the Virtual Environment**
 
-- First, install the `virtualenv` package and create a new Python 3 virtual environment:
+  - First, install the `virtualenv` package and create a new Python 3 virtual environment:
 
 ```bash
-sudo apt-get install  `virtualenv`
-python3 -m virtualenv -p python3 `chosen_venv_name`
+  sudo apt-get install  `virtualenv`
+  python3 -m virtualenv -p python3 `chosen_venv_name`
 ```
-
-- Replace  `chosen_venv_name` with your desired virtual environment name.
+  - Replace  `chosen_venv_name` with your desired virtual environment name.
 
 - **Activate the Virtual Environment**
 
-- Next, activate the virtual environment:
+  - Next, activate the virtual environment:
 
 ```bash
 source `chosen_venv_name` /bin/activate
 Deactivate (for deactivating virtual environment)
 ```
 - **ZED SDK INSTALLATION**
-- An internet connection is required to install the latest ZED SDK on the Nvidia AGX Orin.
-- Download the latest ZED SDK for AGX Orin (e.g. ZED SDK for L4T 34.1 Beta) from the Stereolabs website
-- Select zed sdk version according to your orin  jetpack version
-    - To Check the jetpack version 
+  - An internet connection is required to install the latest ZED SDK on the Nvidia AGX Orin.
+  - Download the latest ZED SDK for AGX Orin (e.g. ZED SDK for L4T 34.1 Beta) from the Stereolabs website
+  - Select zed sdk version according to your orin  jetpack version
+  - To Check the jetpack version 
 ```bash
      sudo apt-cache show nvidia-jetpack
 ```
 
-- Open a terminal and enter the following commands to install the SDK:
+  - Open a terminal and enter the following commands to install the SDK:
 ```bash
-- cd `~/Downloads` # replace with the correct folder if required
+cd ~/Downloads # replace with the correct folder if required
 chmod +x ZED_SDK*
-./ZED_SDK_Tegra_L4T<l4t_version>_v<ZED_SDK_version>.run
+./ZED_SDK_Tegra_L4T <l4t_version> _v<ZED_SDK_version>.run
 ```
-- Please replace `l4t_version` and `ZED_SDK_version` with the correct values, e.g. ZED_SDK_Tegra_L4T34.1_v3.7.4.run.
-- Follow the installer guide and answer the questions to correctly configure the ZED SDK and start to perceive the world in 3D.
+  - Please replace `l4t_version` and `ZED_SDK_version` with the correct values, e.g. ZED_SDK_Tegra_L4T34.1_v3.7.4.run.
+  - Follow the installer guide and answer the questions to correctly configure the ZED SDK and start to perceive the world in 3D.
 
-Now that you’ve successfully set up the AGX Orin with your ZED camera
+  Now that you’ve successfully set up the AGX Orin with your ZED camera
 
-Reference [Stereolabs Jetson Installation Guide](https://www.stereolabs.com/docs/installation/jetson/)
-
+  Reference [Stereolabs Jetson Installation Guide]  
+  (https://www.stereolabs.com/docs/installation/jetson/)
+- INSTALL DESIRED VERSION OF Pytorch AND Torchvision
 
 <img src="pictures/vlcsnap.png" alt="TestbedImage">
 
